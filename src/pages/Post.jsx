@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import styles from "../assets/style/Post.module.css"; // Import CSS Module
+import styles from "../assets/style/Post.module.css"; 
 import Footer from "../components/Footer";
 
 export default function Post() {
@@ -29,7 +29,19 @@ export default function Post() {
         fetchPost();
     }, [id]);
 
-    if (loading) return <p>Loading post...</p>;
+    if (loading) {
+        return (
+            <>
+                <Navbar />
+                <div className={styles.loading}>
+                    <p>
+                        page is loading please wait
+                    </p>
+                </div>
+                <Footer/>
+            </>
+        );
+    }
     if (error) return <p>Error fetching post: {error}</p>;
     if (!post) return <p>Post not found</p>;
 
@@ -37,7 +49,6 @@ export default function Post() {
         <>
             <Navbar />
             <div className={styles.container}>
-                {/* Main Content */}
                 <div className={styles.content}>
                     <h1 className={styles.title}>{post.title}</h1>
                     <p className={styles.date}>January 1, 2021 by <Link to={`/user/${post.userId}`}>Mark</Link></p>
@@ -70,7 +81,6 @@ export default function Post() {
                     </div>
                 </div>
 
-                {/* Sidebar */}
                 <aside className={styles.sidebar}>
                     <div className={styles.sidebarSection}>
                         <h3>About</h3>

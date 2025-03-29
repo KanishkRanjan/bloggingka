@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "../assets/style/PostCard.module.css"; // Import CSS Module
+import styles from "../assets/style/PostCard.module.css";
 
 const PostCard = ({ postInfo }) => {
   const navigate = useNavigate();
@@ -11,7 +11,6 @@ const PostCard = ({ postInfo }) => {
 
   return (
     <div className={styles.post} onClick={handleRedirect} style={{ cursor: "pointer" }}>
-      {/* Image Section */}
       <div className={styles["post-image"]}>
         <img
           src={`https://picsum.photos/id/${postInfo.id}/600/400`}
@@ -20,7 +19,6 @@ const PostCard = ({ postInfo }) => {
         <span className={styles.category}>{postInfo.tags[0] || "General"}</span>
       </div>
 
-      {/* Content Section */}
       <div className={styles["post-body"]}>
         <h3 className={styles["post-title"]}>{postInfo.title}</h3>
         <p className={styles["post-description"]}>{postInfo.body}</p>
