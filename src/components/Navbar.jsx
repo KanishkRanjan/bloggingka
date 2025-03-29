@@ -21,7 +21,7 @@ export default function Navbar() {
     return (
         <nav className={styles.navbar}>
             <div className={styles["navbar-top"]}>
-                <Link to="/subscribe" className={styles.subscribe}>Subscribe</Link>
+                <Link to="/" className={styles.subscribe}>Subscribe</Link>
                 <Link to="/" className={styles.logo}>BloggingKa</Link>
                 <div className={styles.actions}>
                     <button className={styles["search-btn"]}>🔍</button>

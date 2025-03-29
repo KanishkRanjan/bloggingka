@@ -7,9 +7,9 @@ export default function Footer() {
     <footer className={styles.footer}>
       <nav className={styles.nav}>
         <Link to="/">Home</Link>
-        <Link to="/features">Features</Link>
-        <Link to="/pricing">Pricing</Link>
-        <Link to="/faqs">FAQs</Link>
+        <Link to="/">Features</Link>
+        <Link to="/">Pricing</Link>
+        <Link to="/contact">Contact Us</Link>
         <Link to="/about">About</Link>
       </nav>
       <hr className={styles.divider} />

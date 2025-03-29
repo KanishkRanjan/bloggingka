@@ -31,6 +31,7 @@
 
 /* Category Tag */
 .category {
+  text-transform: capitalize;
   position: absolute;
   bottom: 10px;
   left: 10px;
