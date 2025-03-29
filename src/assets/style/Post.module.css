@@ -1,0 +1,128 @@
+/* Container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* width: 80%; */
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    flex: 1; /* Pushes footer down */
+  }
+
+/* Main Content */
+.content {
+    flex: 2;
+    padding-right: 20px;
+}
+
+/* Title */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Date */
+.date {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+/* Body */
+.body {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Blockquote */
+.blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid gray;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+/* Lists */
+.list {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.list li {
+    margin-bottom: 5px;
+}
+
+/* Tags */
+.tags {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.tag {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.tag:hover {
+    text-decoration: underline;
+}
+
+/* Reactions */
+.reactions {
+    font-size: 14px;
+    color: gray;
+    margin-top: 50%;
+}
+
+/* Previous Post Link */
+.previousLink {
+    display: inline-block;
+    margin-right: 20px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.previousLink:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    /* height: 80vh; */
+}
+
+.sidebarSection {
+    margin-bottom: 20px;
+}
+
+.sidebarSection h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sidebarSection ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebarSection ul li {
+    margin-bottom: 5px;
+}
+
+.sidebarSection ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sidebarSection ul li a:hover {
+    text-decoration: underline;
+}

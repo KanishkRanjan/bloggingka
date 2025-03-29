@@ -1,0 +1,72 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.pageButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.pageButton:hover {
+  background-color: #0056b3;
+}
+
+.pageButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pageNumber {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap:20px;
+    padding: 20px;
+}
+
+
+/* Container */
+.container {
+    margin: 35px;
+    background: #212529;
+    border-radius: 8px;
+
+
+  }
+  /* Jumbotron */
+  .jumbotron {
+    width: 75%;
+    height: 250px;
+    color: white;
+    padding: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .jumbotron h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .jumbotron p {
+    font-size: 16px;
+    /* color: #555; */
+  }
+  
+
+  
